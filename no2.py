@@ -2,7 +2,7 @@
 import re
 
 username = input("Masukan Username anda: ")
-if re.match("^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?![\d@#$=])(?<![\d@#$=]){5,9}$", username):
+if re.match("^(?=.{5,9}$)(?![0-9@#$=])[a-zA-Z0-9._]+(?<![0-9@#$=])$", username):
     print ("Sesuai")
 else:
     print ("Tidak Sesuai")
