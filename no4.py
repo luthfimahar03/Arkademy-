@@ -1,5 +1,5 @@
 
-str = "Jangan Kemana - mana"
+str = input("Masukan katanya: ")
  
 jumvokal = 0
 
